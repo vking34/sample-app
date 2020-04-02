@@ -10,7 +10,7 @@ node('jenkins-slave') {
     stage('Build') {
         // Build docker image
         sh (script: """
-        cd ./ci-cd/sample-app/
+        # cd ./ci-cd/sample-app/
         docker build . -t vking34/sample-app:${tag}
         """)
 
